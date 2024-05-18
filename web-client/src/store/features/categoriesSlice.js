@@ -1,8 +1,12 @@
 import { createSlice } from '@reduxjs/toolkit'
 import { v4 as uuid } from 'uuid'
+import { defaultCategory } from '../../utils/defaultValues'
 
 const initialState = {
     items: [
+        {
+            ...defaultCategory
+        },
         {
             id: "dd46b152-5c2d-44f9-855d-ccf95ab955bc",
             name: "Food"
