@@ -4,7 +4,7 @@ import { store } from './store'
 import { Provider } from 'react-redux'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { appRoutes } from './utils/appRoutes';
-import { Categories, Expenses } from './pages';
+import { Categories, Expenses, Home } from './pages';
 
 function App() {
 
@@ -14,6 +14,7 @@ function App() {
         <Header />
         <main className='container mx-auto'>
           <Routes>
+            <Route path={appRoutes.home.path} element={<Home />} />
             <Route path={appRoutes.expense.path} element={<Expenses />} />
             <Route path={appRoutes.category.path} element={<Categories />} />
           </Routes>

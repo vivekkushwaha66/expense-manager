@@ -1,4 +1,5 @@
 export const appRoutes = {
-    expense: { name: 'Expenses', path: '/' },
+    home: { name: 'Home', path: '/' },
+    expense: { name: 'Expenses', path: '/expenses' },
     category: { name: 'Categories', path: '/categories' }
 }
